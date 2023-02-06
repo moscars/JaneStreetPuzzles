@@ -7,7 +7,7 @@ struct Square{
 	// x2 = bottom right
 	// y1 = top left
 	// y2 = top right
-    Square(){x1 = x2 = y1 = y2 = 0;}
+	Square(){x1 = x2 = y1 = y2 = 0;}
 	Square(int x1_, int x2_, int y1_, int y2_) : x1(x1_), x2(x2_), y1(y1_), y2(y2_) {}
 
 	void step(){
