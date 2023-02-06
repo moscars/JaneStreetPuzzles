@@ -34,8 +34,8 @@ struct Square{
 };
 
 ostream& operator<<(ostream& os, const Square& sq){
-    cout << sq.y1 << ";" << sq.y2 << ";" << sq.x2 << ";" << sq.x1;
-	return os;
+        cout << sq.y1 << ";" << sq.y2 << ";" << sq.x2 << ";" << sq.x1;
+        return os;
 }
 
 const int limit = 10000000;
@@ -44,7 +44,7 @@ int main(){
 	ios_base::sync_with_stdio(false);
 	cin.tie(0);
 
-    Square best;
+        Square best;
 
 	int ma = 0;
 	for(int y2 = 0; y2 < 10000000; y2++){
@@ -55,14 +55,14 @@ int main(){
 				int ans = sq.simulate();
 				if (ans > ma){
 					cout << "New best: " << ans << endl;
-                    ma = ans;
-                    best = original;
+                                        ma = ans;
+                                        best = original;
 				}
 			}
 		}
 	}
-    cout << "Answer:" << endl;
-    cout << best << endl;
+        cout << "Answer:" << endl;
+        cout << best << endl;
 
 	return 0;
 }
